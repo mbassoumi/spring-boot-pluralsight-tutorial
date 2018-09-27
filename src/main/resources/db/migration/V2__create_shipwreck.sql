@@ -1,0 +1,10 @@
+-- CREATE TABLE SHIPWRECKS(
+--   ID INT Auto_increment,
+--   name varchar(255),
+--   description varchar(255),
+--   condition varchar(255),
+--   depth int ,
+--   latitude DOUBLE ,
+--   longitude DOUBLE ,
+--   yearDiscovered int
+-- );
