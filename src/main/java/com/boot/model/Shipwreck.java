@@ -3,6 +3,8 @@ package com.boot.model;
 import org.hibernate.validator.constraints.NotBlank;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+
 
 @Entity
 @Table(name = "SHIPWRECKS")
@@ -11,18 +13,31 @@ public class Shipwreck {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
+	@NotNull
+	@Column(name = "shipwreck_name")
 	private String name;
 
+	@NotNull
+	@Column(name = "description")
 	private String description;
 
+	@NotNull
+	@Column(name = "shipwreck_condition")
 	private String condition;
 
+	@NotNull
+	@Column(name = "depth")
 	private Integer depth;
 
+	@NotNull
+	@Column(name = "latitude")
 	private Double latitude;
 
+	@NotNull
+	@Column(name = "longitude")
 	private Double longitude;
 
+	@NotNull
 	@Column(name = "year_discovered")
 	private Integer yearDiscovered;
 
